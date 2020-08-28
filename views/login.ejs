@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav>
+        <div class="nav-wrapper deep-purple darken-2">
+          <a href="/" class="brand-logo"
+            ><span class="brand-logo-span">doc</span>Spotter<i
+              id="icon-logo"
+              class="material-icons right"
+              >landscape</i
+            ></a
+          >
+          <a href="#" data-target="mobile-menu" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="sidenav deep-purple darken-1" id="mobile-menu">
+        <li><a href="/">Home</a></li>
+      </ul>
+      <header class="login-header">
+        <div class="button-container">
+          <h5>Login</h5>
+          <a
+            class="google-btn waves-effect waves-light btn white"
+            href="/auth/google"
+          >
+            <img
+              class="google-logo"
+              src="/img/google.png"
+              alt="google-icon"
+            />Sign in with google</a
+          >
+        </div>
+      </header>
+    </div>
+
+    <%- include('includes/footer') %>
+  </body>
+</html>
