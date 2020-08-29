@@ -7,10 +7,11 @@
         >landscape</i
       ></a
     >
-    <a href="#" data-target="mobile-menu" class="sidenav-trigger"
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"
       ><i class="material-icons">menu</i></a
     >
-    <ul id="mobile-menu" class="right hide-on-med-and-down">
+
+    <ul class="right hide-on-med-and-down">
       <% if (user) {%>
       <li><a class="sign-up" href="/auth/logout">Logout</a></li>
       <% } else {%>
@@ -24,7 +25,7 @@
   </div>
 </nav>
 
-<ul class="sidenav deep-purple darken-1" id="mobile-menu">
+<ul class="sidenav deep-purple darken-1" id="mobile-demo">
   <% if (user) {%>
   <li><a class="sign-up" href="/auth/logout">Logout</a></li>
   <% } else {%>
