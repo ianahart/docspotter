@@ -1,3 +1,19 @@
+/* Nav */
+nav div {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+#icon-logo {
+  display: inline;
+}
+nav div .logo {
+  flex-grow: 1;
+  font-size: 1.5rem;
+}
+
+/* End Nav */
+
 /* Sticky footer */
 html,
 body {
@@ -425,6 +441,9 @@ ul.dropdown-content.select-dropdown li span {
 }
 
 @media only screen and (max-width: 600px) {
+  nav div {
+    flex-direction: column;
+  }
   .intro-container {
     flex-wrap: wrap;
   }

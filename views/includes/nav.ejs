@@ -1,17 +1,13 @@
 <nav>
-  <div class="nav-wrapper deep-purple darken-2">
-    <a href="/" class="brand-logo"
-      ><span class="brand-logo-span">doc</span>Spotter<i
+  <div class="deep-purple darken-2">
+    <a href="/" class="logo"
+      ><span class="brand-logo-span logo">doc</span>Spotter<i
         id="icon-logo"
-        class="material-icons right"
+        class="material-icons"
         >landscape</i
       ></a
     >
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-      ><i class="material-icons">menu</i></a
-    >
-
-    <ul class="right hide-on-med-and-down">
+    <ul>
       <% if (user) {%>
       <li><a class="sign-up" href="/auth/logout">Logout</a></li>
       <% } else {%>
@@ -25,7 +21,34 @@
   </div>
 </nav>
 
-<ul class="sidenav deep-purple darken-1" id="mobile-demo">
+<!-- <nav>
+  <div class="nav-wrapper deep-purple darken-2">
+    <a href="/" class="brand-logo"
+      ><span class="brand-logo-span">doc</span>Spotter<i
+        id="icon-logo"
+        class="material-icons right"
+        >landscape</i
+      ></a
+    >
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+      ><i class="material-icons">menu</i></a
+    >
+
+    <ul id="mobile-menu" class="right hide-on-med-and-down">
+      <% if (user) {%>
+      <li><a class="sign-up" href="/auth/logout">Logout</a></li>
+      <% } else {%>
+      <li><a class="sign-up" href="/auth/login">Login</a></li>
+
+      <%} %>
+      <li><a href="/find-doctor">Find Doctor</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/help">Help</a></li>
+    </ul>
+  </div>
+</nav> -->
+
+<!-- <ul class="sidenav deep-purple darken-1" id="mobile-menu">
   <% if (user) {%>
   <li><a class="sign-up" href="/auth/logout">Logout</a></li>
   <% } else {%>
@@ -35,4 +58,4 @@
   <li><a href="/find-doctor">Find Doctor</a></li>
   <li><a href="/about">About</a></li>
   <li><a href="/help">Help</a></li>
-</ul>
+</ul> -->
