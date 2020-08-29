@@ -10,9 +10,6 @@ passport.serializeUser((user, done) => {
 });
 
 passport.deserializeUser((id, done) => {
-  if (id === null) {
-    console.log('hihihihihihihihi');
-  }
   User.findById(id)
     .then((user) => {
       done(null, user.id);
@@ -25,7 +22,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_SECRET,
-      callbackURL: 'http://localhost:3000/auth/google/redirect',
+      callbackURL: 'https://docspotter.herokuapp.com/auth/google/redirect',
     },
     (accessToken, refreshToken, profile, done) => {
       User.findOne({ googleId: profile.id }).then((currentUser) => {
